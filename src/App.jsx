@@ -6,8 +6,8 @@ import User from './Components/User/User';
 const App = () => {
   return (
     <Routes>
-      <Route path="/school-groups" element={<Girish />} />
-      <Route path="/school-groups/:user" element={<User />} />
+      <Route path="/school-price" element={<Girish />} />
+      <Route path="/school-price/:user" element={<User />} />
     </Routes>
   );
 };
