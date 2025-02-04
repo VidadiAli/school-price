@@ -1,0 +1,100 @@
+
+.user {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid rgb(5, 85, 125);
+    width: calc(100% - 20px);
+    max-width: 600px;
+    margin: 20px auto;
+    align-items: center;
+}
+
+.user>h1 {
+    color: rgb(5, 85, 125);
+    width: 100%;
+    padding: 10px 0;
+}
+
+.user>div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.user>div>div {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 0 10px 2px rgb(235, 235, 235);
+    padding: 10px;
+}
+
+.user>div>div>span {
+    background-color: rgb(5, 85, 125);
+    color: white;
+    padding: 10px 13px;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    width: min-content;
+    white-space: nowrap;
+    border-radius: .7rem;
+}
+
+.user>div>div>div {
+    display: flex;
+    gap: 20px;
+}
+
+.user>div>div>div>div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.user>div>div>div>div>span:nth-child(1) {
+    color: rgb(5, 85, 125);
+    text-align: center;
+    font-weight: 800;
+}
+
+.user>div>div>div>div>span:nth-child(2) {
+    width: 33px;
+    height: 33px;
+    box-shadow: 0 0 10px 2px rgb(235, 235, 235);
+    font-size: 1.1rem;
+    line-height: 33px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: .9rem;
+    font-weight: 900;
+}
+
+
+.user>div>div>div>div:nth-child(3)>span:nth-child(2) {
+    background-image: linear-gradient(30deg, rgb(5, 85, 125), rgb(5, 144, 157));
+    color: white;
+}
+
+@media(max-width: 600px) {
+    .user {
+        padding: 10px;
+        gap: 10px;
+        margin: 10px auto;
+    }
+
+    .user>div>div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .user>div>div>div{
+        gap: 10px;
+    }
+}
